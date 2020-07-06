@@ -3,7 +3,7 @@ const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
-let buyTicketsButton = document.querySelectorAll('.buy_tickets_button');
+const buyTicketsButton = document.querySelector('.buy_tickets_button');
 
 populateUI();
 
@@ -71,5 +71,5 @@ container.addEventListener('click', e => {
 updateSelectedCount();
 
 buyTicketsButton.addEventListener('click', e => {
-  document.querySelectorAll('.seat.selected').classList.toggle('occupied');
+  document.querySelector('selected').classList.add('occupied');
 })
