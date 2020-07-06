@@ -71,5 +71,6 @@ container.addEventListener('click', e => {
 updateSelectedCount();
 
 buyTicketsButton.addEventListener('click', e => {
-  document.querySelector('selected').classList.add('occupied');
+  document.querySelector('selected')
+    .forEach(element => element.classList.add('occupied'));
 })
