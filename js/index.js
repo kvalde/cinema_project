@@ -3,7 +3,7 @@ const seats = document.querySelectorAll('.row .seat:not(.occupied)');
 const count = document.getElementById('count');
 const total = document.getElementById('total');
 const movieSelect = document.getElementById('movie');
-let buyTicketsButton = document.querySelector('.buy_tickets_button');
+let buyTicketsButton = document.querySelectorAll('.buy_tickets_button');
 
 populateUI();
 
